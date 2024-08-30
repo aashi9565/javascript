@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+</head>
+<body>
+    <style>
+        .outer{
+            height: 100vh;
+            width: 100%;
+        }
+        .outer .vid{
+            height: 100%;
+            width: 100%;
+           
+
+        }
+        .outer .vid video{
+            height: 100%;
+            width: 100%;
+        }
+        .outer .img{
+            height: 10px;
+            width: 10px;
+           /* position: absolute;*/
+            top: 405px;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="outer">
+        <div class="vid">
+            <video src="video/video.mp4"autoplay loop muted play-inline></video>
+        </div>
+        <div class="img">
+            <img src="image/" alt="" id="img">
+        </div>
+    </div>
+
+    
+
+
+
+    <script>
+        document.addEventListener('keydown',event=>{
+            console.log(event.code)
+            var car=document.querySelector("#img");
+            //console.log(car)
+            var d='keyD'
+            car.style.position='adsolute';
+
+            switch(event.code){
+                case d:
+                car.style.left='405px'
+                car.style.left=parseInt(car.style.left || 0)+10+'px';
+                break
+            
+            }
+        })
+    </script>
+    
+</body>
+</html>

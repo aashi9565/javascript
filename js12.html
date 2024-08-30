@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <h1>WELCOME TO JS</h1>
+    <div id="myimg"></div>
+
+    <script>
+        var arr=['image/pic 6.jpeg','image/pic 5.jpeg','image/pic 4.jpeg'];
+        var desrc=['pro1','pro2','pro3'];
+        var price=[1200,1299,1399];
+        var x=" ";
+        for (let i=0;i<arr.length;i++){
+            x+=`      <image src="${arr[i]}" alt=" ">
+                      <h1>${desrc}</h1>
+                      <h2>${price}</h2>`;
+            
+        }
+        document.getElementById("myimg").innerHTML=x;
+            
+    </script>
+</body>
+</html>

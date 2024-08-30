@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1{
+    height: 50px;
+    font-weight: 100;
+    display: block;
+    text-align: center;
+    text-decoration: dotted;
+    background-color: hotpink;
+}

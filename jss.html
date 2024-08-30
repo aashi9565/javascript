@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >kuch bhi likh lo </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Rem iusto distinctio voluptatem esse sit, explicabo atque quia voluptates sequi tempora.
+         Vero vel suscipit at pariatur, ipsam sint quasi minima fuga.</p>
+    <h1 >click kro </h1>
+    <h2 >show</h2>     
+    <script src="js.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("h1").click(function(){
+                $("p").hide(5000);
+            })
+
+        })
+        $(document).ready(function(){
+            $("h1").click(function(){
+                $("p").show(5000);
+            })
+
+        })
+        $(document).ready(function(){
+            $("h2").click(function(){
+                $("p").animate(20);
+            })
+
+        })
+        $(document).ready(function(){
+            $("h2").click(function(){
+                $("p").toggle(5000);
+            })
+
+        })
+        $(document).ready(function(){
+            $("h2").click(function(){
+                $("p").fadeIn(5000);
+            })
+
+        })
+    </script>
+</body>
+</html>

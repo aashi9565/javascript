@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript</h1>
+    <input type="text" placeholder="enter num" id="num1">
+    <input type="text" placeholder="enter num" id="num2">
+    <button onclick="factor_fun()">submit</button>
+
+
+    <script>
+        function factor_fun(){
+            var x=parseInt(document.getElementById("num1"))
+            var y=parseInt(document.getElementById("num2"))
+            var i=1;
+            var data=" ";
+            var prime=" ";
+            
+            for(i=x;i<=y;i++){
+                var c=0;
+                for (var j=1;j<=i;j++){
+                    if(i%j==0){
+                        c++;
+                    }
+                }
+                if (c==4){
+                    data+="four factor "+i;
+                    document.getElementById("display").innerHTML=data;
+
+                }
+                else if(c==2){
+                    prime+="prime num"+i;
+                    document.getElementById("display").innerHTML=prime;
+                }
+            }
+
+        }
+    </script>
+
+</body>
+</html>
